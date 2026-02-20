@@ -21,8 +21,18 @@ int main( void ) {
      * You can define additional variable for intermediate results to make the code simpler.
      * Print out the final results for the 2 roots as float values.
      */
+     //b^2-4ac
+     float Discriminant = b * b - 4 * a * c;
+     //squareroot it
+     float sqrtDiscriminant = sqrt(Discriminant);
 
-    
+     //find both roots by swapping the sign
+     root1 = (-b + sqrtDiscriminant)/(2 * a);
+     root2 = (-b - sqrtDiscriminant)/(2 * a);
+     
+     //print it, use %f since a float
+     printf("Root 1 = %f\n",root1);
+     printf("Root 2 = %f\n",root2);
 
     return 0;
 }

@@ -7,8 +7,8 @@
 #include <stdio.h>
 
 int main( void ) {
-    char c = 'a';
-    int k = 95;
+    char c = 'b';
+    int k = 27;
 
     printf("Display char as char: %c\n",c);
     printf("Display char as int: %d\n",c);
